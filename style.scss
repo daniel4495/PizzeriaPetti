@@ -1,0 +1,199 @@
+//Operadores - Inicio
+
+$color1:rgb(177, 146, 146);
+$white: white;
+$black: black;
+$red: red;
+$blue: blue;
+$darkGreen: rgb(0, 92, 0);
+$lightGreen: rgb(49, 163, 49);
+
+$xs: 15px;
+$small: 20px;
+$med: 40px;
+$large: 60px;
+$xl: 100px;
+
+$cincuenta: 50%;
+$cien: 100%;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.color-nav{
+    background-color:rgb(231, 125, 118);
+}
+nav{
+    font-size: $small;
+    font-style: italic;
+}
+.header__img--size:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.2, 1.2); 
+}
+.article_animation{
+    animation-name: efecto;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+body{
+
+    background-repeat: repeat;
+    background-size: cover;
+    background-size: contain;
+}
+main{
+    color: $darkGreen;
+    font-family: 'Urbanist', sans-serif;
+}
+fieldset{
+    background-color: rgb(223, 217, 163);
+    color: rgb(117, 57, 57);
+    background: linear-gradient( #ede9c0 0%, #e8e199 49%, #e6dc7a 100%);
+}
+.border{
+    border: 5px solid rgb(202, 67, 85);
+}
+.nosotrosFont{
+    font-size: 110%;
+    @extend .container;
+    /*text-transform: lowercase;*/
+    word-spacing: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    animation-name: efecto;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+.imgCarta:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.2, 1.2);   
+}
+.textPadding{
+    padding-top: 5%;
+}
+h3{
+    @extend .textPadding;
+    padding-bottom: $small;
+}
+.article__align{
+    @extend .container;
+    @extend .textPadding;
+}
+.cartaCenter{
+    animation-name: efecto;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+    li{
+        @extend .container;
+        display: inline-block;
+        padding-left: 7%;
+        padding-right: 2%;
+        padding-bottom: 8%;
+    }
+}
+.contenedores{
+    display: grid;
+    font-size: $small;
+    @extend .container;
+    color:$lightGreen;
+    border: 3px solid $black;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30% $cincuenta 20%;
+    grid-template-areas: "header header header"
+                         "relleno relleno relleno"
+                         "footer footer footer";
+    animation-name: efecto;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+}
+.container{
+    text-align: center;
+}
+.container-fixed{
+    width: $cien;
+}
+.relleno{
+    grid-area: "relleno";
+    background-color: $white;
+    height: $xl;
+}
+.carousel .carousel-indicators li{
+    height: $small;
+    width: $small;
+    border-radius: $cien;
+}
+.carousel img{
+    object-fit: cover;
+    object-position: center;
+    height:55vh;
+    width: $cien;
+}
+.footer{
+    grid-area: "footer";
+    background-color: white;
+    height: $med; 
+}
+.local1-icon,
+.local2-icon,
+.local3-icon{
+    height: 600px;
+    width: 600px;
+    border: 2px solid #333;
+}
+@each $sucursal in local1, local2, local3 {
+    .#{$sucursal}-icon {
+        background-image: url("img/local/#{$sucursal}.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+} 
+
+@media only screen and (max-width: 480px){
+    .contenedores{
+        font-size: 12px;
+        padding-bottom: $small;
+    }
+    .nosotrosFont{
+        font-size: $xs;
+    }
+}
+@media only screen and (max-width: 600px){
+    .contenedores{
+        font-size: 14px;
+        padding-bottom: 50px;
+    }
+    .nosotrosFont{
+        font-size: 16px;
+    }
+    .cartaCenter{
+        font-size: $small;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .contenedores{
+        font-size: 18px;
+        padding-bottom: 50px;
+    }
+    .nosotrosFont{
+        font-size: $small;
+    }
+    .cartaCenter{
+        font-size: $small;
+    }
+}
+@keyframes efecto{
+    0%{
+        opacity: 10%;
+    }
+    50%{
+        opacity: $cincuenta;
+    }
+}
+
+@import "__header";
+@import "__footer";

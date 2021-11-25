@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.color-nav {
+  background-color: #e77d76;
+}
+
+nav {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.header__img--size:hover {
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.article_animation {
+  -webkit-animation-name: efecto;
+          animation-name: efecto;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+body {
+  background-repeat: repeat;
+  background-size: cover;
+  background-size: contain;
+}
+
+main {
+  color: #005c00;
+  font-family: 'Urbanist', sans-serif;
+}
+
+fieldset {
+  background-color: #dfd9a3;
+  color: #753939;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ede9c0), color-stop(49%, #e8e199), to(#e6dc7a));
+  background: linear-gradient(#ede9c0 0%, #e8e199 49%, #e6dc7a 100%);
+}
+
+.border {
+  border: 5px solid #ca4355;
+}
+
+.nosotrosFont {
+  font-size: 110%;
+  /*text-transform: lowercase;*/
+  word-spacing: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation-name: efecto;
+          animation-name: efecto;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.imgCarta:hover {
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.textPadding, h3, .article__align {
+  padding-top: 5%;
+}
+
+h3 {
+  padding-bottom: 20px;
+}
+
+.cartaCenter {
+  -webkit-animation-name: efecto;
+          animation-name: efecto;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+.cartaCenter li {
+  display: inline-block;
+  padding-left: 7%;
+  padding-right: 2%;
+  padding-bottom: 8%;
+}
+
+.contenedores {
+  display: -ms-grid;
+  display: grid;
+  font-size: 20px;
+  color: #31a331;
+  border: 3px solid black;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 30% 50% 20%;
+      grid-template-rows: 30% 50% 20%;
+      grid-template-areas: "header header header" "relleno relleno relleno" "footer footer footer";
+  -webkit-animation-name: efecto;
+          animation-name: efecto;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+.container, .nosotrosFont, .article__align, .cartaCenter li, .contenedores {
+  text-align: center;
+}
+
+.container-fixed {
+  width: 100%;
+}
+
+.relleno {
+  grid-area: "relleno";
+  background-color: white;
+  height: 100px;
+}
+
+.carousel .carousel-indicators li {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+}
+
+.carousel img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 55vh;
+  width: 100%;
+}
+
+.footer {
+  grid-area: "footer";
+  background-color: white;
+  height: 40px;
+}
+
+.local1-icon,
+.local2-icon,
+.local3-icon {
+  height: 600px;
+  width: 600px;
+  border: 2px solid #333;
+}
+
+.local1-icon {
+  background-image: url("img/local/local1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.local2-icon {
+  background-image: url("img/local/local2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.local3-icon {
+  background-image: url("img/local/local3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .contenedores {
+    font-size: 12px;
+    padding-bottom: 20px;
+  }
+  .nosotrosFont {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contenedores {
+    font-size: 14px;
+    padding-bottom: 50px;
+  }
+  .nosotrosFont {
+    font-size: 16px;
+  }
+  .cartaCenter {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .contenedores {
+    font-size: 18px;
+    padding-bottom: 50px;
+  }
+  .nosotrosFont {
+    font-size: 20px;
+  }
+  .cartaCenter {
+    font-size: 20px;
+  }
+}
+
+@-webkit-keyframes efecto {
+  0% {
+    opacity: 10%;
+  }
+  50% {
+    opacity: 50%;
+  }
+}
+
+@keyframes efecto {
+  0% {
+    opacity: 10%;
+  }
+  50% {
+    opacity: 50%;
+  }
+}
+
+.header--size--color {
+  color: #753939;
+  background-color: black;
+  font-size: 200%;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  background: #b19292;
+  background: -webkit-gradient(linear, left top, right top, from(#965454), color-stop(49%, white), to(#74c478));
+  background: linear-gradient(90deg, #965454 0%, white 49%, #74c478 100%);
+}
+
+footer {
+  background-color: #dfd9a3;
+  color: #753939;
+  font-family: 'Urbanist', sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ede9c0), color-stop(49%, #e8e199), to(#e6dc7a));
+  background: linear-gradient(#ede9c0 0%, #e8e199 49%, #e6dc7a 100%);
+}
+/*# sourceMappingURL=style.css.map */

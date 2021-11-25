@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Petti</title>
+    
+    <!--CSS local-->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="header--size--color">
+        <h1>Pizzeria Petti's</h1> <br>
+        <h2>originale e italiano</h2>
+        <a href="index.html"></a><img class="header__img--size" src="img/img logo 2.png" alt="logo de la pizzeria" width="200px">
+    </header> <hr>
+    <main>
+        <!--Nav de Bootstrap-->
+        <nav class="navbar navbar-expand-lg navbar-light color-nav">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <!--A partir de aca es donde se separan al tener una resolucion menor-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="carta.html">Carta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Trabaja con nosotros</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        <br><br>
+
+         <!-- BUDGES! -->
+        <ol type="I" class="cartaCenter">
+            <li><strong class="list-group-item">Muzzarrella</strong></li>
+            <img class="imgCarta"src="img/muzzarrella.jpg" alt="foto de ejemplo" width= "300px">
+            <li><strong class="list-group-item">Napolitana</strong></li>
+            <img class="imgCarta"src="img/napolitana.jpg" alt="foto de ejemplo" width= "300px">
+            <li><strong class="list-group-item">Con Jamon</strong></li>
+            <img class="imgCarta"src="img/con jamon.jpg" alt="foto de ejemplo" width= "300px">
+            <li><strong class="list-group-item">Fugazzeta</strong></li>
+            <img class="imgCarta"src="img/fugazzetta.JPG" alt="foto de ejemplo" width= "300px">
+            <li><strong class="list-group-item">Calabresa    </strong><span class="badge badge-danger">    Nueva! </span></li>  
+            <img class="imgCarta"src="img/calabresa.jpg" alt="foto de ejemplo" width= "300px">
+        </ol>
+        
+        
+
+<!--FORMULARIO CONTACTOS-->
+        <form action="">
+            <fieldset>
+                <legend>Contactanos!</legend>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre"><br>
+                </div>
+                <div>
+                    <label for="email">Tu email</label>
+                    <input type="email"name="email" id="email"><br>
+                </div>
+                <div>
+                    <label for="telefono">Telefono</label>
+                    <input type="text" name="telefono" id="telefono"><br>
+                </div>
+                <!--TEXTBOX-->
+                <div>
+                    <label for="mensaje">Asunto:</label><br>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                </div>
+                <!--CHECKBOX-->
+                <div>
+                    <label for="terminos">Conozco y acepto la politica de privacidad</label>
+                    <input type="checkbox" name="terminos" id="terminos">
+                </div>
+                <!--BOTONES-->
+                <div>
+                    <button type="reset">Borrar</button>
+                    <button type="submit">Enviar</button>
+                </div>
+            </fieldset>
+        </form>
+
+    </main>
+
+        <!--BOOTSTRAP LIBRERIA JAVASCRIPT-->
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    
+        <!--VINCULAR BOOTSTRAP CSS-->
+    
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+        <!--VINCULAR BOOTSTRAP JAVASCRIPT-->
+        
+        <script src="js/bootstrap.min.js"></script>
+    
+</body>
+</html>

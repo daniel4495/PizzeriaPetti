@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Petti</title>
+    
+    <!--CSS local-->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header class="header--size--color">
+        <h1>Pizzeria Petti's</h1> <br>
+        <h2>originale e italiano</h2>
+        <a href="index.html"></a><img class="header__img--size" src="img/img logo 2.png" alt="logo de la pizzeria" width="200px">
+    </header> <hr>
+    <main>
+        <!--Nav de Bootstrap-->
+        <nav class="navbar navbar-expand-lg navbar-light color-nav">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <!--A partir de aca es donde se separan al tener una resolucion menor-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="carta.html">Carta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Trabaja con nosotros</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        <br><br>
+        
+        <!-- TABLA
+            
+        <table border="4" cellpadding="15" cellspacing="15">
+            <tr>
+                <th>Menu para empresas</th>
+                <th>Para Casamientos o Bautismos</th>
+                <th>Para Navidad o fiestas similares</th>
+            </tr>
+            <tr>
+                <td>presentamos un menu empresarial con 3 tamaños, las pizzas varian acorde a la disponibilidad de ingredientes del dia</td>
+                <td>organizamos la comida para tu casamiento, bautismo, graduacion o similares con las mejores pizzas, se pueden solicitar pizzas especiales como:</td>
+                <td>tambien podemos enviarte pizzas para que pases las fiestas de la mejor forma con nuevas variantes acorde al tipo de festividad!:</td>
+            </tr>
+            <td><ol type="A">
+                <li>Combo chico</li>
+                <li>Combo mediano</li>
+                <li>Combo Grande</li>
+            </ol></td>
+            <td><ol type="A">
+                <li>Para casamientos</li>
+                <li>Para bautismos</li>
+                <li>Para graduaciones</li>
+            </ol></td>
+            <td><ol type="A">
+                <li>Para navidad</li>
+                <li>Para año nuevo</li>
+                <li>Otras festividades</li>
+            </ol></td>
+        </table>-->
+
+
+        <!--GRID
+        <div class="contenedores">
+            <div class="item1 header">Menu para empresas</div>
+            <div class="item2 header">Para Casamientos o Bautismos</div>
+            <div class="item3 header">Navidad o fiestas similares</div>
+
+            
+            <div class="item4 relleno">presentamos un menu empresarial con 3 tamaños, las pizzas varian acorde a la disponibilidad de ingredientes del dia</div>
+            <div class="item5 relleno">organizamos la comida para tu casamiento, bautismo, graduacion o similares con las mejores pizzas, se pueden solicitar pizzas especiales como:</div>
+            <div class="item6 relleno">tambien podemos enviarte pizzas para que pases las fiestas de la mejor forma con nuevas variantes acorde al tipo de festividad!:</div>
+
+            
+            <div class="item7 footer">Combo chico - Combo mediano - Combo Grande</div>
+            <div class="item8 footer">Para casamientos - Para bautismos - Para graduaciones</div>
+            <div class="item9 footer">Para navidad - Para año nuevo - Otras festividades</div>
+        </div>
+        -->
+        
+        <!--CON BOOTSTRAP-->
+        <div class="container">
+            <h2>Servicios que ofrecemos</h2>
+            <!--<p>Combine .table-dark and .table-striped to create a dark, striped table:</p>-->        
+            <table class="table table-dark table-striped">
+              <thead>
+                <tr>
+                  <th>Menu para empresas</th>
+                  <th>Para Casamientos o Bautismos</th>
+                  <th>Navidad o fiestas similares</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>presentamos un menu empresarial con 3 tamaños, las pizzas varian acorde a la disponibilidad de ingredientes del dia</td>
+                  <td>organizamos la comida para tu casamiento, bautismo, graduacion o similares con las mejores pizzas, se pueden solicitar pizzas especiales como</td>
+                  <td>tambien podemos enviarte pizzas para que pases las fiestas de la mejor forma con nuevas variantes acorde al tipo de festividad!:</td>
+                </tr>
+                <tr>
+                  <td>Combo chico - Combo mediano - Combo Grande</td>
+                  <td>Para casamientos - Para bautismos - Para graduaciones</td>
+                  <td>Para navidad - Para año nuevo - Otras festividades</td>
+              </tbody>
+            </table>
+          </div>
+        
+
+<!--FORMULARIO CONTACTOS-->
+        <form action="">
+            <fieldset>
+                <legend>Contactanos!</legend>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre"><br>
+                </div>
+                <div>
+                    <label for="email">Tu email</label>
+                    <input type="email"name="email" id="email"><br>
+                </div>
+                <div>
+                    <label for="telefono">Telefono</label>
+                    <input type="text" name="telefono" id="telefono"><br>
+                </div>
+                <!--TEXTBOX-->
+                <div>
+                    <label for="mensaje">Asunto:</label><br>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                </div>
+                <!--CHECKBOX-->
+                <div>
+                    <label for="terminos">Conozco y acepto la politica de privacidad</label>
+                    <input type="checkbox" name="terminos" id="terminos">
+                </div>
+                <!--BOTONES-->
+                <div>
+                    <button type="reset">Borrar</button>
+                    <button type="submit">Enviar</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+        <!--BOOTSTRAP LIBRERIA JAVASCRIPT-->
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    
+        <!--VINCULAR BOOTSTRAP CSS-->
+    
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+        <!--VINCULAR BOOTSTRAP JAVASCRIPT-->
+        
+        <script src="js/bootstrap.min.js"></script>
+    
+</body>
+</html>
