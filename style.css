@@ -6,9 +6,17 @@
 /*.color-nav{
     background-color:rgb(231, 125, 118);
 }*/
-nav {
+.navbar {
   font-size: 20px;
   font-style: italic;
+}
+
+.navbar .color-nav {
+  color: black;
+}
+
+.navbar .navbar-brand {
+  font-size: 40px;
 }
 
 .header__img--size:hover {
@@ -49,6 +57,18 @@ fieldset {
 
 .border {
   border: 5px solid #ca4355;
+}
+
+.importantText {
+  text-align: center;
+}
+
+.importantTextTitle {
+  font-size: 40px;
+}
+
+.importantText-text-1 {
+  font-size: 20px;
 }
 
 .nosotrosFont {
@@ -243,23 +263,55 @@ h3 {
 }
 
 .header--size--color {
-  font-size: 200%;
+  font-size: 40px;
   text-align: center;
-  font-family: 'Lobster', cursive;
+  font-family: sans-serif;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .logoPizza {
   padding: 20px;
   border: 20px solid white;
   margin: 20px;
+  -webkit-animation-name: efecto;
+          animation-name: efecto;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .navbar-dark {
   background-color: black;
 }
 
+.nav-item {
+  color: white;
+}
+
+.color-nav {
+  background-color: #86b325;
+}
+
 footer {
-  color: #753939;
+  background-color: black;
+  color: #c4c4c4;
   font-family: 'Urbanist', sans-serif;
+  font-size: 35px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border: 40px solid black;
+}
+
+footer .privacy-policy-font {
+  font-size: 15px;
+}
+
+footer .redesSociales {
+  font-size: 40px;
+  padding: 10px;
+  border-bottom: 15px solid black;
 }
 /*# sourceMappingURL=style.css.map */

@@ -25,10 +25,17 @@ $cien: 100%;
 /*.color-nav{
     background-color:rgb(231, 125, 118);
 }*/
-nav{
+.navbar{
     font-size: $small;
     font-style: italic;
+    .color-nav{
+        color: black;
+    }
+    .navbar-brand{
+        font-size: $med;
+    } 
 }
+
 
 .header__img--size:hover{
     transition: transform 0.5s ease;
@@ -56,6 +63,15 @@ fieldset{
 }
 .border{
     border: 5px solid rgb(202, 67, 85);
+}
+.importantText{
+    text-align: center;
+}
+.importantTextTitle{
+    font-size: $med;
+}
+.importantText-text-1{
+    font-size: $small;
 }
 .nosotrosFont{
     font-size: 110%;

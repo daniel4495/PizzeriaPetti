@@ -1,6 +1,19 @@
 footer{
-    //background-color: rgb(223, 217, 163);
-    color: rgb(117, 57, 57);
+    background-color: black;
+    color: rgb(196, 196, 196);
     font-family: 'Urbanist', sans-serif;
     //background: linear-gradient( #ede9c0 0%, #e8e199 49%, #e6dc7a 100%);
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border: 40px solid black;
+    .privacy-policy-font{
+        font-size: $xs;
+    }
+    .redesSociales{
+        font-size: $med;
+        padding: 10px;
+        border-bottom: 15px solid black;
+    }
 }
