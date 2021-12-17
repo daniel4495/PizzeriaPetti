@@ -3,10 +3,9 @@
   padding: 0;
 }
 
-.color-nav {
-  background-color: #e77d76;
-}
-
+/*.color-nav{
+    background-color:rgb(231, 125, 118);
+}*/
 nav {
   font-size: 20px;
   font-style: italic;
@@ -244,21 +243,23 @@ h3 {
 }
 
 .header--size--color {
-  color: #753939;
-  background-color: black;
   font-size: 200%;
   text-align: center;
   font-family: 'Lobster', cursive;
-  background: #b19292;
-  background: -webkit-gradient(linear, left top, right top, from(#965454), color-stop(49%, white), to(#74c478));
-  background: linear-gradient(90deg, #965454 0%, white 49%, #74c478 100%);
+}
+
+.logoPizza {
+  padding: 20px;
+  border: 20px solid white;
+  margin: 20px;
+}
+
+.navbar-dark {
+  background-color: black;
 }
 
 footer {
-  background-color: #dfd9a3;
   color: #753939;
   font-family: 'Urbanist', sans-serif;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ede9c0), color-stop(49%, #e8e199), to(#e6dc7a));
-  background: linear-gradient(#ede9c0 0%, #e8e199 49%, #e6dc7a 100%);
 }
 /*# sourceMappingURL=style.css.map */

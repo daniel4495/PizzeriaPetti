@@ -22,13 +22,14 @@ $cien: 100%;
     padding: 0;
 }
 
-.color-nav{
+/*.color-nav{
     background-color:rgb(231, 125, 118);
-}
+}*/
 nav{
     font-size: $small;
     font-style: italic;
 }
+
 .header__img--size:hover{
     transition: transform 0.5s ease;
     transform: scale(1.2, 1.2); 
