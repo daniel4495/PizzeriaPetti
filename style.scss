@@ -73,6 +73,9 @@ fieldset{
 .importantText-text-1{
     font-size: $small;
 }
+.imagenesSucursal-size{
+    align-items: center;
+}
 .nosotrosFont{
     font-size: 110%;
     @extend .container;
@@ -155,13 +158,11 @@ h3{
     background-color: white;
     height: $med; 
 }
-.local1-icon,
-.local2-icon,
-.local3-icon{
-    height: 600px;
-    width: 600px;
-    border: 2px solid #333;
+.imagenesSucursal{
+    
 }
+
+
 @each $sucursal in local1, local2, local3 {
     .#{$sucursal}-icon {
         background-image: url("img/local/#{$sucursal}.jpg");

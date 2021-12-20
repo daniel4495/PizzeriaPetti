@@ -71,6 +71,12 @@ fieldset {
   font-size: 20px;
 }
 
+.imagenesSucursal-size {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .nosotrosFont {
   font-size: 110%;
   /*text-transform: lowercase;*/
@@ -180,14 +186,6 @@ h3 {
   grid-area: "footer";
   background-color: white;
   height: 40px;
-}
-
-.local1-icon,
-.local2-icon,
-.local3-icon {
-  height: 600px;
-  width: 600px;
-  border: 2px solid #333;
 }
 
 .local1-icon {
