@@ -20,6 +20,7 @@ $cien: 100%;
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /*.color-nav{
@@ -78,7 +79,7 @@ fieldset{
 }
 .nosotrosFont{
     font-size: 110%;
-    @extend .container;
+    text-align: center;
     /*text-transform: lowercase;*/
     word-spacing: 5px;
     display: flex;
@@ -101,7 +102,7 @@ h3{
     padding-bottom: $small;
 }
 .article__align{
-    @extend .container;
+    text-align: center;
     @extend .textPadding;
 }
 .cartaCenter{
@@ -109,14 +110,14 @@ h3{
     animation-timing-function: ease-in;
     animation-duration: 0.5s;
     li{
-        @extend .container;
+        text-align: center;
         display: inline-block;
         padding-left: 7%;
         padding-right: 2%;
         padding-bottom: 8%;
     }
 }
-.contenedores{
+/*.contenedores{
     display: grid;
     font-size: $small;
     @extend .container;
@@ -130,13 +131,29 @@ h3{
     animation-name: efecto;
     animation-timing-function: ease-in;
     animation-duration: 0.5s;
-}
-.container{
+}*/
+.headerGrid {
     text-align: center;
-}
-.container-fixed{
-    width: $cien;
-}
+    padding: 32px;
+  }
+  
+  /* Crea 2 columnas iguales que se encuentra una junto a la otra, es lo que permite que las imagenes se junten */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  .column img {
+    margin-top: 12px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;  //display block usa el 100% del espacio, mientras que table va a ser tan amplio como el contenido le permita
+    clear: both;
+  }
+
 .relleno{
     grid-area: "relleno";
     background-color: $white;
@@ -158,10 +175,6 @@ h3{
     background-color: white;
     height: $med; 
 }
-.imagenesSucursal{
-    
-}
-
 
 @each $sucursal in local1, local2, local3 {
     .#{$sucursal}-icon {

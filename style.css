@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*.color-nav{
@@ -79,6 +81,7 @@ fieldset {
 
 .nosotrosFont {
   font-size: 110%;
+  text-align: center;
   /*text-transform: lowercase;*/
   word-spacing: 5px;
   display: -webkit-box;
@@ -118,6 +121,10 @@ h3 {
   padding-bottom: 20px;
 }
 
+.article__align {
+  text-align: center;
+}
+
 .cartaCenter {
   -webkit-animation-name: efecto;
           animation-name: efecto;
@@ -128,37 +135,48 @@ h3 {
 }
 
 .cartaCenter li {
+  text-align: center;
   display: inline-block;
   padding-left: 7%;
   padding-right: 2%;
   padding-bottom: 8%;
 }
 
-.contenedores {
-  display: -ms-grid;
-  display: grid;
-  font-size: 20px;
-  color: #31a331;
-  border: 3px solid black;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 30% 50% 20%;
-      grid-template-rows: 30% 50% 20%;
-      grid-template-areas: "header header header" "relleno relleno relleno" "footer footer footer";
-  -webkit-animation-name: efecto;
-          animation-name: efecto;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-}
-
-.container, .nosotrosFont, .article__align, .cartaCenter li, .contenedores {
+/*.contenedores{
+    display: grid;
+    font-size: $small;
+    @extend .container;
+    color:$lightGreen;
+    border: 3px solid $black;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30% $cincuenta 20%;
+    grid-template-areas: "header header header"
+                         "relleno relleno relleno"
+                         "footer footer footer";
+    animation-name: efecto;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+}*/
+.headerGrid {
   text-align: center;
+  padding: 32px;
 }
 
-.container-fixed {
-  width: 100%;
+/* Crea 2 columnas iguales que se encuentra una junto a la otra, es lo que permite que las imagenes se junten */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.column img {
+  margin-top: 12px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .relleno {
