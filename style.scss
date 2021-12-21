@@ -67,17 +67,23 @@ fieldset{
 }
 .importantTextTitle{
     font-size: $med;
+    font-family: 'Russo One', sans-serif;
+    opacity: 0.7;
 }
 .importantText-text-1{
     font-size: $small;
+    opacity: 0.6;
+    font-family: 'Open Sans Condensed', sans-serif;
+    border-right: 100px solid white;
+    border-left: 100px solid white;
 }
 .imagenesSucursal-size{
     align-items: center;
 }
 .nosotrosFont{
-    font-size: 110%;
+    font-size: $small;
     text-align: center;
-    /*text-transform: lowercase;*/
+    /*text-transform: lowercases;*/
     word-spacing: 5px;
     display: flex;
     flex-wrap: wrap;
@@ -86,6 +92,13 @@ fieldset{
     animation-name: efecto;
     animation-timing-function: ease-in;
     animation-duration: 1s;
+    font-family: 'Open Sans Condensed', sans-serif;
+    border: 100px solid white;
+}
+.imgNosotros{
+    margin: $xs;
+    padding-bottom: $med;
+    text-align: center;
 }
 .textPadding{
     padding-top: 5%;
@@ -93,6 +106,8 @@ fieldset{
 h3{
     @extend .textPadding;
     padding-bottom: $small;
+    font-family: 'Russo One', sans-serif;
+    opacity: 0.8;
 }
 .article__align{
     text-align: center;
@@ -114,6 +129,12 @@ h3{
     transition: transform 0.5s ease;
     transform: scale(1.2, 1.2);   
 }
+.fontGaleria{
+    font-size: $med;
+    font-family: 'Russo One', sans-serif;
+    opacity: 0.8;
+}
+
 .headerGrid {
     text-align: center;
     padding: 32px;
