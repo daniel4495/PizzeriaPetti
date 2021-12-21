@@ -23,9 +23,6 @@ $cien: 100%;
     box-sizing: border-box;
 }
 
-/*.color-nav{
-    background-color:rgb(231, 125, 118);
-}*/
 .navbar{
     font-size: $small;
     font-style: italic;
@@ -54,7 +51,7 @@ body{
     background-size: contain;
 }
 main{
-    color: $darkGreen;
+    color: $black;
     font-family: 'Urbanist', sans-serif;
 }
 fieldset{
@@ -90,10 +87,6 @@ fieldset{
     animation-timing-function: ease-in;
     animation-duration: 1s;
 }
-.imgCarta:hover{
-    transition: transform 0.5s ease;
-    transform: scale(1.2, 1.2);   
-}
 .textPadding{
     padding-top: 5%;
 }
@@ -117,35 +110,30 @@ h3{
         padding-bottom: 8%;
     }
 }
-/*.contenedores{
-    display: grid;
-    font-size: $small;
-    @extend .container;
-    color:$lightGreen;
-    border: 3px solid $black;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 30% $cincuenta 20%;
-    grid-template-areas: "header header header"
-                         "relleno relleno relleno"
-                         "footer footer footer";
-    animation-name: efecto;
-    animation-timing-function: ease-in;
-    animation-duration: 0.5s;
-}*/
+.imgCarta:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.2, 1.2);   
+}
 .headerGrid {
     text-align: center;
     padding: 32px;
+    margin-top: 50px;
+    border-top: 50px solid #ba0000;
   }
   
   /* Crea 2 columnas iguales que se encuentra una junto a la otra, es lo que permite que las imagenes se junten */
   .column {
     float: left;
-    width: 50%;
+    width: 25%;
     padding: 10px;
   }
-  
   .column img {
     margin-top: 12px;
+    transition: 1s;
+  }
+  .column img:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.2, 1.2); 
   }
   
   .row:after {
