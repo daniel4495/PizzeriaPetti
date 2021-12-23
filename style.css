@@ -6,12 +6,10 @@
 }
 
 .navbar {
+  text-decoration: none;
+  font-family: 'Russo One', sans-serif;
   font-size: 20px;
-  font-style: italic;
-}
-
-.navbar .color-nav {
-  color: black;
+  border-top: 40px solid #66ce4d;
 }
 
 .navbar .navbar-brand {
@@ -330,7 +328,7 @@ h3 {
 }
 
 .color-nav {
-  background-color: #86b325;
+  background-color: #66ce4d;
 }
 
 footer {

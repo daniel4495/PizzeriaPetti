@@ -24,11 +24,10 @@ $cien: 100%;
 }
 
 .navbar{
+    text-decoration: none;
+    font-family: 'Russo One', sans-serif;
     font-size: $small;
-    font-style: italic;
-    .color-nav{
-        color: black;
-    }
+    border-top: 40px solid rgb(102, 206, 77);
     .navbar-brand{
         font-size: $med;
     } 
