@@ -109,6 +109,12 @@ fieldset {
   border: 100px solid white;
 }
 
+#imgNosotros {
+  border-radius: 50% 20% / 10% 40%;
+  width: 800px;
+  height: auto;
+}
+
 .imgNosotros {
   margin: 15px;
   padding-bottom: 40px;
